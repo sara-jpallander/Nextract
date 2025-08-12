@@ -1,0 +1,12 @@
+.logoutButton {
+  color: var(--nav-text-white);
+  font-size: var(--regular-font-size);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.logoutButton:hover {
+  color: var(--action-primary);
+}

@@ -1,0 +1,14 @@
+.linkButton {
+  width: var(--button-width);
+  height: var(--button-height);
+  background-color: var(--blue-primary);
+  color: var(--nav-text-white);
+  border-radius: var(--button-border-radius);
+  cursor: pointer;
+}
+
+.linkButton:hover {
+  background-color: var(--blue-primary-hover);
+  opacity: 0.9;
+  transition: all 0.2s ease-in-out;
+}

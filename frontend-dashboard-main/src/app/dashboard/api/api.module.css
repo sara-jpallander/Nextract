@@ -1,0 +1,335 @@
+/* API container */
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* View Toggle Buttons */
+.buttoncontainer {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  border: #4b4b4b 2px solid;
+  border-radius: var(--input-border-radius);
+  height: 30px;
+}
+
+.activeRight {
+  background-color: #4b4b4b;
+  border-radius: 0 3px 3px 0;
+  height: 100%;
+  width: 100%;
+  color: #fcfcfd;
+  font-weight: 500;
+  font-size: var(--regular-font-size);
+}
+
+.activeLeft {
+  background-color: #4b4b4b;
+  border-radius: 3px 0 0 3px;
+  height: 100%;
+  width: 100%;
+  color: #fcfcfd;
+  font-weight: 500;
+  font-size: var(--regular-font-size);
+}
+
+.activeRight:hover,
+.activeLeft:hover {
+  cursor: pointer;
+}
+
+.inactive {
+  width: 100%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--regular-font-size);
+  line-height: 31px;
+  color: black;
+  cursor: pointer;
+}
+
+/* Input Section */
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 90%;
+}
+
+.urlInput {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 20px;
+  border-radius: var(--input-border-radius);
+}
+
+.urlInput .apiInput {
+  flex-grow: 1;
+}
+
+.apiInput {
+  width: 100%;
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid #c4c4c4;
+  border-radius: var(--input-border-radius);
+  font-size: var(--regular-font-size);
+  outline: none;
+  color: #444;
+}
+
+.apiButtons {
+  display: flex;
+  gap: 20px;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.submitButton {
+  background-color: var(--blue-primary);
+  height: 40px;
+  width: 140px;
+  padding: 5px;
+  color: var(--nav-text-white);
+  border-radius: var(--button-border-radius);
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.submitButton:hover {
+  background-color: var(--blue-primary-hover);
+  opacity: 0.9;
+  transition: all 0.2s ease-in-out;
+}
+
+.file {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hiddenDefaultInput {
+  display: none;
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #c4c4c4;
+  border-radius: var(--circle-border-radius);
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.error {
+  color: red;
+  font-size: var(--regular-font-size);
+  margin-top: 0.5rem;
+}
+
+.response {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  font-size: var(--regular-font-size);
+  white-space: pre-wrap;
+}
+
+/* Key selection */
+.keyContainer {
+  width: 90%;
+  height: 45vh;
+  border: var(--border-thickness) solid #c4c4c4;
+  border-radius: var(--container-border-radius);
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.keyList {
+  list-style: none;
+  margin: 0;
+}
+
+.keyListItem:nth-child(odd) {
+  background-color: var(--secondary-gray);
+  color: black;
+}
+
+.keyListItem:nth-child(even) {
+  color: black;
+}
+
+.keyListItem {
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.keyListItem p {
+  margin: 0 8px;
+  font-weight: 500;
+  font-size: var(--regular-font-size);
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  appearance: none;
+  border: 1px solid var(--off-black);
+  border-radius: var(--circle-border-radius);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-right: 10px;
+}
+
+.checkbox:checked {
+  background: #00dcb7;
+}
+
+/* API buttons */
+.api-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+/* JSON Viewer */
+.jsonViewerContainer {
+  padding: 1rem;
+  border: var(--border-thickness) solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: var(--container-border-radius);
+  margin-top: 1rem;
+}
+
+.jsonView p {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: var(--regular-font-size);
+  font-family: var(--font-familiy-space-mono);
+}
+
+.saveConnectButtonContainer {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.buttonSave,
+.buttonConnect {
+  background-color: var(--blue-primary);
+  color: var(--nav-text-white);
+  width: var(--button-width);
+  height: var(--button-height);
+  border-radius: var(--button-border-radius);
+  font-size: var(--regular-font-size);
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.buttonSave:hover,
+.buttonConnect:hover {
+  background-color: var(--blue-primary-hover);
+  opacity: 0.9;
+  transition: all 0.2s ease-in-out;
+}
+
+.keyButton {
+  position: fixed;
+}
+
+/* JSON-VIEWER */
+.sectionTitle {
+  font-family: var(--font-family-manrope);
+  font-size: var(--h2-font-size);
+  font-weight: 600;
+  margin: 0.5rem 1rem;
+}
+
+.subText {
+  font-family: var(--font-family-manrope);
+  font-size: var(--regular-font-size);
+  color: #555;
+  margin: 1rem;
+}
+
+.modalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: white;
+  border-radius: var(--container-border-radius);
+  position: relative;
+  width: 40%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modalContent > input {
+  padding: 10px;
+  border: var(--border-thickness) solid #ccc;
+  border-radius: var(--input-border-radius);
+}
+
+.modalContent > button {
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: var(--button-border-radius);
+  font-size: var(--regular-font-size);
+}
+.modalContent > button:hover {
+  background-color: var(--action-primary);
+  color: var(--blue-primary);
+}
+
+.closebutton {
+  position: absolute;
+  top: -2px;
+  right: 15px;
+  color: black;
+  border: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}

@@ -1,0 +1,50 @@
+.dropdownMenu {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown-rutan (dolt från början) */
+  .dropdownContent {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 2px;
+    background-color: white;
+    min-width: 180px;
+    padding: 12px;
+    border-radius: var(--container-border-radius);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  
+  /* Visa dropdown när användaren hovrar över .dropdownMenu */
+  .dropdownMenu:hover .dropdownContent {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  
+  /* Lista i dropdownen */
+  .dropdownList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Lista varje item */
+  .dropdownList li {
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    border-radius: var(--container-border-radius);
+    white-space: nowrap;
+  }
+  
+  .dropdownList li:hover {
+    background-color: #f3f3f3;
+  }
+  

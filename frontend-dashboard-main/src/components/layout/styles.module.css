@@ -1,0 +1,54 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: var(--border-thickness) solid var(--border-color);
+  margin-bottom: 10px;
+  padding: 8px 22px 8px 50px;
+  color: #4b4b4b;
+}
+
+.header h3 {
+  font-size: 1.4rem;
+}
+
+.header svg {
+  height: 56px;
+  border: var(--border-thickness) solid var(--border-color);
+  border-radius: var(--circle-border-radius);
+}
+
+.asideNav {
+  align-self: flex-start;
+  position: sticky;
+  padding: 12px;
+  gap: 12px;
+  background-color: var(--blue-primary);
+  width: 301px;
+  height: 100vh;
+}
+
+.asideNav li {
+  text-align: center;
+  transition: 0.3s;
+  color: var(--nav-text-white);
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.asideNav li:hover {
+  color: var(--action-primary);
+}
+
+.asideNav p {
+  font-size: var(--regular-font-size);
+}
+
+.NextLogo {
+  margin-bottom: 100px;
+  padding: 8px 12px 0px 12px;
+}

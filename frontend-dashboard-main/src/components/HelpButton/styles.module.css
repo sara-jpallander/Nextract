@@ -1,0 +1,26 @@
+.helpIcon {
+  border: 1px solid #ccc;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border-radius: 50%;
+  color: #ccc;
+  transition: 0.1s linear;
+}
+.helpIcon:hover {
+  scale: 1.08;
+}
+.disabled {
+  border: 1px solid #ccc;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border-radius: 50%;
+  color: #ccc;
+}

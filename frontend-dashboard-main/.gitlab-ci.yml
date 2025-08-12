@@ -1,0 +1,29 @@
+stages:
+  - build
+  - package
+  - deploy
+  - teardown
+variables:
+  utils_image: $CI_REGISTRY/$CI_PROJECT_NAMESPACE/utilities/docker-utils:latest
+
+cache:
+  paths:
+    - node_modules/
+
+include:
+  - local: deployment/build.yml
+  - local: deployment/generateArtifact.yml
+    rules:
+      - if: $CI_COMMIT_BRANCH == 'dev' || $CI_COMMIT_BRANCH == 'main'|| $CI_COMMIT_BRANCH == 'feature/hotfixes'
+  - local: deployment/deploy.yml
+    inputs:
+      TARGET_ENV: dev
+      SERVICE_URL: dev-nextract.cc25.chasacademy.dev
+    rules:
+      - if: $CI_COMMIT_BRANCH == 'dev' || $CI_COMMIT_BRANCH == 'feature/hotfixes'
+  - local: deployment/deploy.yml
+    inputs:
+      TARGET_ENV: prod
+      SERVICE_URL: nextract.cc25.chasacademy.dev
+    rules:
+      - if: $CI_COMMIT_BRANCH == 'main'

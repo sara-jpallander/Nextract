@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-gray: #f6f6f6;
+  --secondary-gray: #e8e7e7;
+  --off-black: #1a1c28;
+  --blue-primary: #091e43;
+  --blue-primary-hover: #061632;
+  --blue-secondary: #0279d4;
+  --action-primary: #00dcb7;
+  --action-primary-hover: #00c4a3;
+  --light-blue: #d6e4fa;
+  --aside-nav-color: #091e43;
+  --nav-text-white: #fcfcfd;
+  --button-border-radius: 10px;
+  --input-border-radius: 5px;
+  --container-border-radius: 10px;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.3rem;
+  --h3-font-size: 1.1rem;
+  --h4-font-size: 1rem;
+  --regular-font-size: 1rem;
+  --circle-border-radius: 50%;
+  --font-familiy-manrope: "Manrope", Arial, Helvetica, sans-serif;
+  --font-familiy-space-mono: "Space Mono", Arial, Helvetica, sans-serif;
+  --button-width: 200px;
+  --button-height: 45px;
+  --container-margin-top: 20px;
+  --container-width: 1000px;
+  --container-height: 450px;
+  --border-thickness: 0.5px;
+  --border-color: #c4c4c4;
+  --container-marginTop: 20px;
+  --delete-button-red: #ff4d4f;
+  --delete-button-red-hover: #ff7875;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white;
+  color: var(--off-black);
+  font-family: var(--font-familiy-manrope);
+  font-style: "Manrope";
+}
+
+.jsonView {
+  .rjv-container,
+  ._2IvMF {
+    background-color: #f4f4f4 !important;
+    font-size: var(--regular-font-size);
+    font-family: var(--font-familiy-space-mono);
+    line-height: 1.6;
+    color: #1a1c28;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: left;
+    text-transform: capitalize;
+  }
+
+  ._1BXBN {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 30px;
+  }
+
+  ._vGjyY {
+    color: rgb(95, 95, 95);
+  }
+
+  ._1bQdo {
+    color: #3125d8;
+    font-style: italic;
+  }
+}

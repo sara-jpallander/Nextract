@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+.main {
+  height: 100vh;
+  display: flex;
+  background-color: #e4f0f6;
+  justify-content: space-around;
+  /* align-items: center; */
+  font-family: "Manrope", Arial, Helvetica, sans-serif;
+}
+
+.main label {
+  background-color: var(--nav-text-white);
+  width: 100%;
+}
+
+.redirect {
+  text-align: center;
+  color: var(--nav-text-white);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.redirect span {
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.signupContainer {
+  opacity: 0%;
+  transition: 1.5s;
+}
+
+.signupContainer.register {
+  opacity: 100%;
+  transition: 1.5s;
+}
+
+.loginContainer {
+  opacity: 100%;
+  transition: 1.5s;
+}
+
+.loginContainer.register {
+  opacity: 0%;
+  transition: 1.5s;
+}
+
+.signupContainer,
+.loginContainer {
+  width: 80%;
+  max-width: 380px;
+  min-width: 275px;
+  color: var(--off-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signupContainer .header,
+.loginContainer .header {
+  font-size: 37px;
+  color: var(--off-black);
+}
+
+.signupContainer form,
+.loginContainer form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.signupContainer form fieldset,
+.loginContainer form fieldset {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.signupContainer form button,
+.loginContainer form button {
+  all: unset;
+  text-align: center;
+  width: 100%;
+  align-self: center;
+  padding: 8px 0;
+  border-radius: var(--button-border-radius);
+  background-color: var(--blue-primary);
+  color: var(--nav-text-white);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signupContainer form button:hover,
+.loginContainer form button:hover {
+  background-color: var(--blue-primary-hover);
+  transition: 0.3s;
+}
+
+.welcome {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  position: absolute;
+  right: 0;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100vh;
+  background-color: var(--blue-primary);
+  background-image: linear-gradient(180deg, #091e43 50%, #074e60e0, #057d7d, #00dcb7e4);
+
+  transition: all 0.3s linear;
+  transform: translateX(0%);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 60%;
+}
+
+.section h1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: white;
+}
+
+.section .welcomeMsg {
+  font-weight: 600;
+  font-size: 22px;
+  color: white;
+}
+
+.section img {
+  width: 70%;
+  border-radius: 8px;
+  margin-top: 30px;
+  align-self: center;
+}
+
+.section span {
+  font-weight: bold;
+}
+
+.welcome.register {
+  transition: all 0.3s linear;
+  transform: translateX(-100%);
+}
+
+.logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 40px;
+}
+
+.header {
+  font-weight: 700;
+  text-align: start;
+}
+
+.header.signup {
+  margin-bottom: 30px;
+}
+
+.loginMsg {
+  font-size: 22px;
+  font-weight: 600;
+  color: #4b4b4b;
+  margin-bottom: 30px;
+}
+
+.inputLabel {
+  font-size: 20px;
+  font-weight: 600;
+  color: #425466;
+  margin-bottom: 8px;
+}
+
+.forgot {
+  text-align: end;
+  color: var(--off-black);
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.forgot.signup {
+  text-align: start;
+}
+
+.forgot.terms {
+  text-align: start;
+  margin-top: 20px;
+}
+
+.checkbox {
+  margin-right: 3px;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: var(--nav-text-white);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+.modal h3 {
+  color: var(--off-black);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.modal p {
+  color: #666;
+  margin: 0;
+}

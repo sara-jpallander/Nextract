@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+.main {
+  font-family: "Manrope", Arial, Helvetica, sans-serif;
+  background-color: var(--blue-primary);
+  color: var(--nav-text-white);
+  min-width: 1200px;
+}
+
+.main,
+.header *,
+.content *,
+.mission,
+.contacts {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--nav-text-white);
+  padding: 1.1rem 122px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: var(--blue-primary);
+}
+
+.header ul {
+  display: flex;
+  gap: 30px;
+}
+
+.header ul > :first-child {
+  border-left: 2px solid var(--nav-text-white);
+  padding-left: 30px;
+}
+
+.header ul li {
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.header ul li:hover {
+  color: #00dcb7;
+}
+
+.content,
+.mission,
+.contacts {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  gap: 100px;
+  background-image: linear-gradient(#091e43 30%, #001136);
+  padding: 0 20%;
+}
+
+.content .text {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  width: 550px;
+}
+
+.content .text h1,
+.mission h1,
+.services h1 {
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.content .text p {
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.content button,
+.contacts button {
+  width: 192px;
+  height: 48px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: var(--button-border-radius);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.signupBtn {
+  background-color: var(--action-primary);
+  color: var(--blue-primary);
+  margin-right: 32px;
+}
+
+.signupBtn:hover {
+  background-color: var(--action-primary-hover);
+}
+
+.mission {
+  gap: 100px;
+  background-color: #001136;
+}
+
+.mission section {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.mission section p {
+  font-weight: 500;
+  font-size: 20px;
+  width: 540px;
+}
+
+.services {
+  background-image: linear-gradient(#001136, #091e43 60%);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.whyus {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.whyus .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30px 0 -50px;
+}
+
+.whyus .container p {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.whyus .container h1 {
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+
+.whyus .container .bubble {
+  display: flex;
+  gap: 50px;
+  padding: 30px;
+  border: 1px solid var(--nav-text-white);
+  width: 790px;
+  border-radius: var(--container-border-radius);
+}
+
+.whyus .container .bubble article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 297px;
+  height: 225px;
+}
+
+.whyus .container .bubble article h1 {
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.whyus .container .bubble article p {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.contacts h3,
+.contacts h2,
+.contacts p {
+  text-align: center;
+  z-index: 1;
+}
+
+.contacts h3 {
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.contacts h2 {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.contacts p {
+  font-weight: 400;
+  font-size: 16px;
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 122px;
+  background-color: #001136;
+}
+
+.footer .info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .info article {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 25%;
+}
+
+.footer .info article h3 {
+  font-weight: 700;
+}
+
+.footer button {
+  font-size: 14px;
+}
+
+.footer button:hover {
+  color: #545559;
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+  margin-top: 8px;
+}
+
+.footerbottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.lang {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.hero {
+  width: 550px;
+}
+
+.input {
+  width: 313px;
+}
+
+.input input {
+  width: 100%;
+  border: 1px solid #cad1e1;
+  border-radius: var(--input-border-radius);
+  padding: 8px 16px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+
+.input button {
+  font-size: 12px;
+  background-color: var(--nav-text-white);
+  color: var(--blue-primary);
+  border-radius: var(--input-border-radius);
+  padding: 6px 14px;
+  margin-top: 10px;
+}
+.helpBtn {
+  margin-left: auto;
+}
