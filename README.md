@@ -80,11 +80,11 @@ _Please note that some elements across all mentioned pages are still in a proof-
 ### Trello
 Making lists of big goals according to user stories and breaking them down into smaller tasks.
 
-![Alt text](./src/public/trello.png)
+![Alt text](./frontend-dashboard-main/src/public/trello.png)
 #
 ### Figma
 
-![Alt text](./src/public/wireframes.png)
+![Alt text](./frontend-dashboard-main/src/public/wireframes.png)
 #
 ### Tech stack
 
